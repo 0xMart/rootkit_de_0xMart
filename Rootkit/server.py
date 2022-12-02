@@ -83,6 +83,9 @@ print(welcome.decode("utf-8"))
 while True:
     try:
         shell_btnt = str(input("\033[31m\033[1mKSF\033[31m>>\033[1;32m "))
+        print("")
+        print("Commandes : shell, exit, recv_archive, help, hello")
+        
         Shell.verifications(shell_btnt)
     except KeyboardInterrupt:
         conn.close()
