@@ -116,6 +116,8 @@ command est une fonction qui execute l'ordre envoyé par le serveur puis le clie
 
 send_archive pour envoyer des fichiers sur le serveur 
 
+hello est une fonction qui affiche dans une fenêtre le message "hello"
+
 ----------------------------Socket----------------------
 
 il ne faut pas oublier la partie de gestion des socket pour la connexion réseau et linitialisation des paramètres de bas (PORT, IP)
