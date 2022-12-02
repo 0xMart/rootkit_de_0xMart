@@ -4,8 +4,9 @@ import  os
 import  subprocess
 from time  import sleep
 import  json
-# Creation du socket pour l’envoi et la réception des messages
+from tkinter import *
 
+# Creation du socket pour l’envoi et la réception des messages
 IP = socket.gethostbyname("localhost")
 PORT = 80
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -40,7 +41,17 @@ class Client:
         with open(filename, "rb") as f:
             content= f.read()
             s.send(content)
-
+            
+    def hello(DATA):
+    for i in range (5):
+        gui = Tk()
+        var = StringVar()
+        msg = Message( gui, textvariable=var, relief=RAISED )
+        var.set("Hello, Welcome to WayToLearnX!")
+        msg.pack()
+        gui.mainloop()
+        
+        
 while True:
     try:
         rcvc = s.recv(1024)
