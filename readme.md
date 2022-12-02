@@ -12,13 +12,12 @@ le but du malware et communiquer avec une machine distante pour effectuer des ac
 
 Faite attention ce logiciel a été créé dans le but d'apprentissage il ne faut pas l'utiliser a des fin malvaillante  
 
-il se peut qu'il y'est des petit probleme d'encodage car sous windows l'UTF-8 ne fonctionne pas
+il se peut qu'il y'est des petit probleme d'encodage car sous windows l'UTF-8 ne fonctionne pas sous windows
 
 ### Pré-requis
 
 Il faut avoir un fichier file.txt sur la machine distante
 ainsi que le fichier client.py
-
 
 ### Installation
 
@@ -33,6 +32,16 @@ ainsi que le fichier client.py
 ## Démarrage
 
 Pour lancer le logiciel il faut juste taper *Python3 serveur.py* puis *Python3 client.py* sur la machine distante
+
+
+Plusieurs commandes sont disponibles dans le Rootkit :
+
+- **shell** : Pour avoir le shell client
+- **exit** : Exit le programme coté client
+- **recv_archive** : copie des fichiers client.
+- **help** : Liste les commandes possibles
+- **hello** : Affiche un hello dans une petite interface graphique
+
 
 
 ## Explication du code 
