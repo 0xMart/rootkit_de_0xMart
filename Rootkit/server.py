@@ -12,7 +12,7 @@ class Shell:
         self.SHELL_BT = SHELL_PYTHON
 
     def verifications(SHELL_PYTHON):
-        verifications = ["shell", "exit", "recv_archive", "help"]
+        verifications = ["shell", "exit", "recv_archive", "help","hello"]
         # Pour avoir accès au shell client
         if(SHELL_PYTHON == verifications[0]):
             print("Exécution du shell côté client")
@@ -39,6 +39,10 @@ class Shell:
         # Aide sur les commandes possibles
         if(SHELL_PYTHON == verifications[3]):
             print("help")
+       #Hello
+    if(SHELL_PYTHON == verifications[4]):
+        conn.send("hello".encode())
+        print("hello sur le client")
 
     def home():
         conn.send("home".encode())
