@@ -5,6 +5,7 @@ import os
 import subprocess
 from time import sleep
 import json
+from tkinter import *
 
 # Définition des fonctions
 class Shell:
